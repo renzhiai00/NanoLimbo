@@ -27,7 +27,7 @@ import java.lang.reflect.Field;
 import ua.nanit.limbo.server.LimboServer;
 import ua.nanit.limbo.server.Log;
 
-公共 final class NanoLimbo {
+public final class NanoLimbo {
 
     private static final String ANSI_GREEN = "\033[1;32m";
     private static final String ANSI_RED = "\033[1;31m";
@@ -88,7 +88,7 @@ import ua.nanit.limbo.server.Log;
         try {
             if (System.getProperty("os.name").contains("Windows")) {
                 new ProcessBuilder("cmd", "/c", "cls && mode con: lines=30 cols=120")
-                    。inheritIO()
+                    .inheritIO()
                     .start()
                     .waitFor();
             } else {
